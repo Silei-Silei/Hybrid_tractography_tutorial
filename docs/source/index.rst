@@ -49,7 +49,7 @@ Third, the dyad sample with the smallest angle to the microscopy orientation on 
 .. image:: fig3.png
   :width: 200px
   
- .. code-block:: matlab
+.. code-block:: matlab
  
          % Record smallest angle between vector and any dyad sample
         [~,indd] = max(cosangsqrd,[],2,'omitnan');
@@ -72,11 +72,28 @@ Forth, to reconstruct the 3D hybrid orientation, the microscopy provides the in-
 .. image:: fig4.png
   :width: 200px
 
- .. code-block:: matlab
+.. code-block:: matlab
        micro.vect3D = tmp.inplane.*vecnorm(tmp.a2,2,2)+tmp.a1;
        micro.vect3D = reshape(micro.vect3D,size(micro.inplane));
        
 Fifth, with the 3D hybrid orientation at the spatial resolution of microscopy, for each voxel, the orientation was compared to a 3D vector set (256 directions evenly distributed across a sphere) and populate a frequency histogram. The fibre orientations within a certain region size were combined which determined the spatial resolution of the hybrid orientation.
+
+.. code-block:: matlab
+        % For each voxel in hr space, extract fibre orientations, compare
+        % to directions in 'vectors' and populate frequency histogram
+        VV = unique(voxind);
+        VV(isnan(VV)) = [];
+        for w = 1:numel(VV)
+            v = VV(w);
+            if roimask_us(v)==1
+                ind = voxind==v;
+                if sum(ind)>0
+                    out = hist_sphere(micro.vect3D(ind,:),vectors);
+                    count(v,:) = count(v,:)+out.count;
+                end
+            end
+            if mod(w,500)==0, disp([num2str(w) '/' num2str(numel(VV))]); end
+         end
 
 
 
