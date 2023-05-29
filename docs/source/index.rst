@@ -48,8 +48,37 @@ Third, the dyad sample with the smallest angle to the microscopy orientation on 
 
 .. image:: fig3.png
   :width: 200px
+  
+ .. code-block:: matlab
+ 
+         % Record smallest angle between vector and any dyad sample
+        [~,indd] = max(cosangsqrd,[],2,'omitnan');
+        linearind = sub2ind(size(cosangsqrd),1:size(cosangsqrd,1),indd'); %'
+        angg = acos(sqrt(cosangsqrd(linearind)));
+
+
+        a1 = reshape(a1,[],3);
+        a2 = reshape(a2,[],3);
+
+        % Output dyad sample most closely associated with each micro orientation
+        selected.a1 = a1(linearind,:);
+        selected.a2 = a2(linearind,:);
+        selected.ang = angg;
+        selected.ind = indd;
+
 
 Forth, to reconstruct the 3D hybrid orientation, the microscopy provides the in-plane orientation and the dMRI approximates the orientation going out of the microscopic plane.
 
 .. image:: fig4.png
   :width: 200px
+
+ .. code-block:: matlab
+       micro.vect3D = tmp.inplane.*vecnorm(tmp.a2,2,2)+tmp.a1;
+       micro.vect3D = reshape(micro.vect3D,size(micro.inplane));
+       
+Fifth, with the 3D hybrid orientation at the spatial resolution of microscopy, for each voxel, the orientation was compared to a 3D vector set (256 directions evenly distributed across a sphere) and populate a frequency histogram. The fibre orientations within a certain region size were combined which determined the spatial resolution of the hybrid orientation.
+
+
+
+
+       
