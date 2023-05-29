@@ -1,24 +1,17 @@
-Welcome to Lumache's documentation!
+dMRI microscopy hybrid orientation reconstruction tutorial
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
 
-Lumache has its documentation hosted on Read the Docs.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
+Diffusion MRI orientation
 --------
+First, the diffusion MRI orientation is provided by the Ball and stick model using FSL. The signal decay of the diffusion is modelled by an isotropic compartment (Ball) and multiple restricted compartments for fibre orientation (stick). 
 
-.. toctree::
+   merged_th<i>samples: samples from the distribution on theta
+   merged_ph<i>samples: samples from the distribution on phi
+   merged_f<i> samples: samples from the distribution on anisotropic volume fraction
 
-   usage
-   api
+The threshold of anisotropic volume fraction for three fibre population is set at 0.05 and fibre having lower volume fraction than this threshold will be removed. Details of ball and stick model output can be found https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide.
+
+Other diffusion model can also be used such as the constrained spherical deconvolution in mrtrix generating the white matter fibre orientation distribution function (fODF). The peaks will be first extracted from the fODF and the discrete fibre orientation can be input into the hybrid model. 
+
+
