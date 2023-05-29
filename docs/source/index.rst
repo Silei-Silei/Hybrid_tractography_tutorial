@@ -66,8 +66,10 @@ Third, the dyad sample with the smallest angle to the microscopy orientation on 
         selected.ang = angg;
         selected.ind = indd;
 
+Hybrid orientation
+--------
 
-Forth, to reconstruct the 3D hybrid orientation, the microscopy provides the in-plane orientation and the dMRI approximates the orientation going out of the microscopic plane.
+To reconstruct the 3D hybrid orientation, the microscopy provides the in-plane orientation and the dMRI approximates the orientation going out of the microscopic plane.
 
 .. image:: fig4.png
   :width: 200px
@@ -98,6 +100,26 @@ Fifth, with the 3D hybrid orientation at the spatial resolution of microscopy, f
          end
 
 
+Spherical harmonics
+--------
+The frequency histogram was fitted to the spherical harmonics. The FOD can be generated.
 
 
-       
+.. code-block:: matlab
+
+        % Fit SH coeffs to frequency matrix
+        if mrtrixflag
+            vectors(1,:) = -vectors(1,:);
+            disp('LR flip for mrtrix')
+        end
+        SHmat = SH_transform(vectors,8); % get the spherical harmonics basis
+        SHmat_pinv = pinv(SHmat);
+        Ncoeffs = size(SHmat,2);       
+
+        % Normalise hsitogram by number of pixels in each voxel
+        countn = count./sum(count,2);
+        coeffs = SHmat_pinv*countn';
+        SH_3D = reshape(coeffs',s1,s2,s3,Ncoeffs);
+        count_3D = reshape(count,s1,s2,s3,256);
+
+
