@@ -29,22 +29,22 @@ Second, to facilitate a comparison between the 3D dMRI fibre orientation and 2D 
 .. image:: fig2.png
   :width: 200px
   
+::
+  function out = project(v,n)
 
-``function out = project(v,n)``
+  %Ensure norm is unit
+  n = n./vecnorm(n,2,2);
 
-``%Ensure norm is unit``
-``n = n./vecnorm(n,2,2);``
+  % Find vector projection
+  a1 = sum(v.*n,2).*n;
 
-``% Find vector projection``
-``a1 = sum(v.*n,2).*n;``
+  % i.e. the vector projected onto the plane
+  a2 = v-a1;
 
-``% i.e. the vector projected onto the plane``
-``a2 = v-a1;``
+  out.a1 = a1;
+  out.a2 = a2;
 
-``out.a1 = a1;``
-``out.a2 = a2;``
-
-``end``
+  end
 
 
 Third, the dyad sample with the smallest angle to the microscopy orientation on the microscopic plane was selected. The through plane angle of the dyad sample is used for the hybrid orientation reconstruction.
