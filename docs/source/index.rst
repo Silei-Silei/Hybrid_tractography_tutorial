@@ -36,8 +36,6 @@ Second, to facilitate a comparison between the 3D dMRI fibre orientation and 2D 
       n = n./vecnorm(n,2,2);
 
       % Find vector projection
-      % i.e. the vector projected onto the normal
-      % https://en.wikipedia.org/wiki/Vector_projection
       a1 = sum(v.*n,2).*n;
 
       % i.e. the vector projected onto the plane
