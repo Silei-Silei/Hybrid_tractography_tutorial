@@ -23,14 +23,14 @@ First, the microscopy orientation has been registered to the dMRI space with FSL
 
 .. image:: ../images/fig1.jpg
   :width: 500px
-  :scale: 110%
+  :scale: 170%
   :align: center
 
 Second, to facilitate a comparison between the 3D dMRI fibre orientation and 2D microscopy orientation. The dMRI orientation is projected onto the 2D microscopy plane and onto the normal vector of the plane. Next, the angle difference is calculated.
 
 .. image:: ../images/fig2.jpg
   :width: 200px
-  :scale: 110%
+  :scale: 170%
   :align: center
   
 .. code-block:: matlab
