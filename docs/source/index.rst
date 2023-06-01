@@ -23,11 +23,13 @@ First, the microscopy orientation has been registered to the dMRI space with FSL
 
 .. image:: ../images/fig1.jpg
   :align: center
+  :width: 200px
 
 Second, to facilitate a comparison between the 3D dMRI fibre orientation and 2D microscopy orientation. The dMRI orientation is projected onto the 2D microscopy plane and onto the normal vector of the plane. Next, the angle difference is calculated.
 
 .. image:: ../images/fig2.jpg
   :align: center
+  :width: 200px
   
 .. code-block:: matlab
 
@@ -48,6 +50,7 @@ Third, the dyad sample with the smallest angle to the microscopy orientation on 
 
 .. image:: ../images/fig3.jpg
   :align: center
+  :width: 200px
   
 .. code-block:: matlab
  
@@ -73,6 +76,7 @@ To reconstruct the 3D hybrid orientation, the microscopy provides the in-plane o
 
 .. image:: ../images/fig4.jpg
   :align: center
+  :width: 200px
 
 .. code-block:: matlab
         
