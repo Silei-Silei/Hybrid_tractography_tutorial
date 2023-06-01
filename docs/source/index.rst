@@ -22,15 +22,13 @@ Microscopy orientation
 First, the microscopy orientation has been registered to the dMRI space with FSL tool tirl (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/TIRL/UserGuide). The voxel coordinate for each microscopic pixel is described by x, y, z coordinates in the diffusion mri space. The fiber orientation is represented by the 3D vector.
 
 .. image:: ../images/fig1.jpg
-  :width: 500px
-  :height: 500px
+  :height: 350px
   :align: center
 
 Second, to facilitate a comparison between the 3D dMRI fibre orientation and 2D microscopy orientation. The dMRI orientation is projected onto the 2D microscopy plane and onto the normal vector of the plane. Next, the angle difference is calculated.
 
 .. image:: ../images/fig2.jpg
-  :width: 200px
-  :height: 200px
+  :height: 350px
   :align: center
   
 .. code-block:: matlab
