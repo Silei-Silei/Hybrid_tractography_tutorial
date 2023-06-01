@@ -50,7 +50,7 @@ Third, the dyad sample with the smallest angle to the microscopy orientation on 
 
 .. image:: ../images/fig3.jpg
   :align: center
-  :width: 200px
+  :width: 150px
   
 .. code-block:: matlab
  
