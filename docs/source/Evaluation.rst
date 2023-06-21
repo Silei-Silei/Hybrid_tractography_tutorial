@@ -19,4 +19,9 @@ Second, a comparison to the Constrained Spherical Deconvolution method
 
 Tractography
 --------
-The tractography pipeline was implemented with the MRTrix3.
+Global fibre tractography was achieved using the iFOD2 algorithm. Fibre bundle segmentation was performed with inclusion and exclusion masks from XTRACT to extract 42 tracts spanning the whole brain, including association, commissural, limbic and projection fibres48. The masks were warped from standard (F99) space to the BigMac diffusion data.(https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/XTRACT)
+
+.. image:: ../images/tractography.jpg
+  :align: center
+  :width: 200px
+
