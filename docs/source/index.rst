@@ -2,11 +2,11 @@ Welcome to the dMRI-microscopy hybrid tractography tutorial
 ===================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 5
    :hidden:
    :caption: Code Explanation
 
-  Hybrid Orientation Code Explanation
+  Code Explanation
 
 .. toctree::
    :maxdepth: 1
