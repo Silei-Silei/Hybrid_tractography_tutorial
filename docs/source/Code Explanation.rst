@@ -1,4 +1,4 @@
-Hybrid Orientation Code Explanation
+Hybrid Orientation code explanation
 ===================================
 
 Diffusion MRI orientation
