@@ -1,3 +1,6 @@
+Hybrid Orientation Code Explanation
+===================================
+
 Diffusion MRI orientation
 --------
 First, the diffusion MRI orientation is provided by the Ball and stick model using FSL. The signal decay of the diffusion is modelled by an isotropic compartment (Ball) and multiple restricted compartments for fibre orientation (stick). 
