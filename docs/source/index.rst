@@ -126,4 +126,10 @@ The frequency histogram was fitted to the spherical harmonics. The FOD can be ge
         SH_3D = reshape(coeffs',s1,s2,s3,Ncoeffs);
         count_3D = reshape(count,s1,s2,s3,256);
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Evaluation
+
+   Evalaution
 
