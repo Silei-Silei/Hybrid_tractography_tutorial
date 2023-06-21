@@ -131,5 +131,11 @@ The frequency histogram was fitted to the spherical harmonics. The FOD can be ge
    :hidden:
    :caption: Evaluation
 
-   Evalaution
+   Evaluation
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Different Microscopy Contrast
+
+   Different Microscopy Contrast
