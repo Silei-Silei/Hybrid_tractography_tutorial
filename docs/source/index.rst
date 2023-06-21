@@ -6,7 +6,7 @@ Welcome to the dMRI-microscopy hybrid tractography tutorial
    :hidden:
    :caption: Hybrid orientation code explanation
 
-  Hybrid orientation code explanation
+  Code Explanation
 
 .. toctree::
    :maxdepth: 1
