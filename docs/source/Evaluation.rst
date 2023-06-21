@@ -5,11 +5,13 @@ Comparison of Hybrid Orientation with other fibre orientation reconstruction met
 --------
 
 First, a comparison to the Ball and Stick model (BAS)
+
 .. image:: ../images/BAS.jpg
   :align: center
   :width: 200px
 
 Second, a comparison to the Constrained Spherical Deconvolution method
+
 .. image:: ../images/CSD.jpg
   :align: center
   :width: 200px
