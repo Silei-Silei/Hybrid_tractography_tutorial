@@ -7,7 +7,6 @@ PLI estimated the primary fibre orientation based on the birefringence of myelin
 
 .. image:: ../images/fig12.jpg
   :align: center
-  :width: 150px
 
 
 Gallyas Silver staining
@@ -16,7 +15,6 @@ Gallyas Silver staining
 
 .. image:: ../images/fig10.jpg
   :align: center
-  :width: 150px
 
 
 Cresyl Vilot staining
@@ -25,5 +23,4 @@ Similar to the Gallyas, 2D structure tensor analysis of the stained sections was
 
 .. image:: ../images/fig11.jpg
   :align: center
-  :width: 150px
   
