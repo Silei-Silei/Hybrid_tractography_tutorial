@@ -7,6 +7,8 @@ PLI estimated the primary fibre orientation based on the birefringence of myelin
 
 .. image:: ../images/fig12.jpg
   :align: center
+  :width: 400px
+  :height:400px
 
 
 Gallyas Silver staining
