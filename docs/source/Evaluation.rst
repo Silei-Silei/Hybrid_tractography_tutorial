@@ -8,13 +8,11 @@ First, a comparison to the Ball and Stick model (BAS)
 
 .. image:: ../images/fig8.jpg
   :align: center
-  :width: 200px
 
 Second, a comparison to the Constrained Spherical Deconvolution method
 
 .. image:: ../images/fig7.jpg
   :align: center
-  :width: 200px
 
 
 Tractography
@@ -23,5 +21,4 @@ Global fibre tractography was achieved using the iFOD2 algorithm. Fibre bundle s
 
 .. image:: ../images/fig9.jpg
   :align: center
-  :width: 200px
 
