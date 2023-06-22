@@ -5,7 +5,7 @@ PLI
 --------
 PLI estimated the primary fibre orientation based on the birefringence of myelinated axons with a resolution of at the micro-meter per pixel. Maps of fibre orientation within the microscopy plane (in-plane angles) were used as input for the hybrid dMRI-PLI tractography. 
 
-.. image:: ../images/fig3.jpg
+.. image:: ../images/fig12.jpg
   :align: center
   :width: 150px
 
