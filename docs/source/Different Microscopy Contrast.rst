@@ -14,7 +14,7 @@ Gallyas Silver staining
 --------
 2D structure tensor analysis of the stained sections was used to estimate the fibre orientations for each microscopy pixel.
 
-.. image:: ../images/fig3.jpg
+.. image:: ../images/fig10.jpg
   :align: center
   :width: 150px
 
@@ -23,7 +23,7 @@ Cresyl Vilot staining
 --------
 Similar to the Gallyas, 2D structure tensor analysis of the stained sections was used to estimate the fibre orientations for each microscopy pixel.
 
-.. image:: ../images/fig3.jpg
+.. image:: ../images/fig11.jpg
   :align: center
   :width: 150px
   
