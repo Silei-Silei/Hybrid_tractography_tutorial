@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Hybrid Oirentation'
+project = 'Hybrid dMRI-Microscopy fibre orientation'
 copyright = '2023, Silei Zhu'
 author = 'Silei Zhu'
 
