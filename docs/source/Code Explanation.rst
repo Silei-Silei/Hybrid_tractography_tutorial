@@ -17,7 +17,7 @@ The diffusion BAS and microscopy in-plane orientation were used as inputs. The 3
   :align: center
   :width: 250px
 
-shows the in-plane, through-plane angle and angle difference maps. We selected the BAS sample with the smallest in-plane angle difference and determined the matched through-plane angle. 
+Here, we show the in-plane, through-plane angle and angle difference maps. We selected the BAS sample with the smallest in-plane angle difference and determined the matched through-plane angle. 
 
 .. image:: ../images/fig15.jpg
   :align: center
