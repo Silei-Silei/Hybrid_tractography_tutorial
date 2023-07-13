@@ -5,6 +5,9 @@ Diffusion MRI orientation
 --------
 First, the diffusion MRI orientation is provided by the Ball and stick model using FSL. The signal decay of the diffusion is modelled by an isotropic compartment (Ball) and multiple restricted compartments for fibre orientation (stick). 
 
+Diffusion MRI (0.6mm isotropic, 128 gradient directions, and b=4 ms /µm2) was analysed to estimate ≤ 3 fibre populations with 50 orientation estimates (samples) per population. Note, other diffusion models providing estimation for the fibre orientation could also be used. The BAS model was chosen due to its competency in measuring multiple fibre populations per voxel and discrete orientation samples that can be directly compared with those from microscopy.
+
+The output of the BAS model:
 | merged_th<i>samples: samples from the distribution on theta
 | merged_ph<i>samples: samples from the distribution on phi
 | merged_f<i> samples: samples from the distribution on anisotropic volume fraction
