@@ -6,6 +6,13 @@ We propose a data fusion approach to jointly analyse data from dMRI and microsco
 This tutorial will introduce the code to reconstruct the hybrid orientation, the evaluation of approach and the application to other microscopy contrasts.
 
 .. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Overview
+
+   Overview
+
+.. toctree::
    :maxdepth: 5
    :hidden:
    :caption: Code Explanation
