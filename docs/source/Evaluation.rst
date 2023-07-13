@@ -4,12 +4,12 @@ Hybrid Orientation Evaluation
 Comparison of Hybrid Orientation with other fibre orientation reconstruction method
 --------
 
-The hybrid orientation was compared to the orientations obtained from the dMRI data using both ball and stick model (BAS) which assumed the dMRI data can be described by a ball compartment and stick compartments.
+The hybrid orientation was compared to the orientations obtained from the dMRI data using the ball and stick model (BAS) which assumed the dMRI data can be described by a ball compartment and stick compartments.
 
 .. image:: ../images/fig8.jpg
   :align: center
 
-Second, a comparison to the Constrained Spherical Deconvolution method was implemented.The hybrid dMRI-PLI FOD agreed with the fibre orientation obtained from BAS and CSD in dMRI data from coronal, sagittal and transverse views near the cortex. 
+Second, a comparison to the Constrained Spherical Deconvolution method was implemented. The hybrid dMRI-PLI FOD agreed with the fibre orientation obtained from BAS and CSD in dMRI data from coronal, sagittal and transverse views near the cortex. 
 
 .. image:: ../images/fig7.jpg
   :align: center
