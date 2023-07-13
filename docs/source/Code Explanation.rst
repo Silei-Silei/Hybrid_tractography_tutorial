@@ -5,7 +5,7 @@ Diffusion MRI orientation
 --------
 First, the diffusion MRI orientation is provided by the Ball and stick model using FSL. The signal decay of the diffusion is modelled by an isotropic compartment (Ball) and multiple restricted compartments for fibre orientation (stick). 
 
-Diffusion MRI (0.6mm isotropic, 128 gradient directions, and b=4 ms /µm2) was analysed to estimate ≤ 3 fibre populations with 50 orientation estimates (samples) per population. Note, other diffusion models providing estimation for the fibre orientation could also be used. The BAS model was chosen due to its competency in measuring multiple fibre populations per voxel and discrete orientation samples that can be directly compared with those from microscopy.
+Diffusion MRI (0.6mm isotropic, 128 gradient directions, and b=4 ms /µm2) was analysed to estimate ≤ 3 fibre populations with 50 orientation estimates (samples) per population. 
 
 The output of the BAS model:
 | merged_th<i>samples: samples from the distribution on theta
@@ -16,7 +16,7 @@ The output of the BAS model:
 The threshold of anisotropic volume fraction for three fibre population is set at 0.05 and fibre having lower volume fraction than this threshold will be removed. Details of ball and stick model output can be found https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT/UserGuide.
 
 
-Other diffusion model can also be used such as the constrained spherical deconvolution in mrtrix generating the white matter fibre orientation distribution function (fODF). The peaks will be first extracted from the fODF and the discrete fibre orientation can be input into the hybrid model. 
+Note, other diffusion models providing estimation for the fibre orientation could also be used. The BAS model was chosen due to its competency in measuring multiple fibre populations per voxel and discrete orientation samples that can be directly compared with those from microscopy. The constrained spherical deconvolution in MRtrix3 generating the white matter fibre orientation distribution function (fODF) can also be used. The peaks will be first extracted from the fODF and the discrete fibre orientation can be input into the hybrid model. 
 
 
 Microscopy orientation
