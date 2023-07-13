@@ -8,6 +8,7 @@ First, the diffusion MRI orientation is provided by the Ball and stick model usi
 Diffusion MRI (0.6mm isotropic, 128 gradient directions, and b=4 ms /µm2) was analysed to estimate ≤ 3 fibre populations with 50 orientation estimates (samples) per population. 
 
 The output of the BAS model:
+
 | merged_th<i>samples: samples from the distribution on theta
 | merged_ph<i>samples: samples from the distribution on phi
 | merged_f<i> samples: samples from the distribution on anisotropic volume fraction
